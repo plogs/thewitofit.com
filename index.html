@@ -8,22 +8,9 @@
 
 <style>
 
-.container {
-  max-width: 850px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
 img {
   max-width: 100%;
   height: auto;
-}
-
-.image-row {
-  display: flex;
-  gap: 1rem;
-  align-items: stretch;
 }
 
 .image-row {
@@ -36,17 +23,6 @@ img {
   width: 50%;
   height: auto;
   display: block;
-}
-
-/* On small screens, stack them */
-@media (max-width: 700px) {
-  .image-row {
-    flex-direction: column;
-  }
-
-  .image-row img {
-    width: 100%;
-  }
 }
 
 .container {
@@ -65,6 +41,49 @@ p {
   margin-right: auto;
 }
 
+.quote-images {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.quote-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 700px) {
+  .quote-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-card {
+    max-width: 100%;
+  }
+}
+
+
+.quote-card {
+  max-width: 320px;
+  width: 100%;
+}
+
+.quote-text {
+  margin: 0.75rem 0 0.25rem 0;
+  text-align: left;
+}
+
+.quote-author {
+  margin: 0;
+  text-align: right;
+}
+
 </style>
 
 </head>
@@ -73,11 +92,48 @@ p {
 
 
 
+
+
+
 <h1 align='center'>I Have a Dream</h1>
 
-<p style='margin-bottom: -2em;'>"I have a dream that my four little children will one day live in a
+
+<div class="quote-images">
+  <div class="quote-card">
+    <img src="images/white-only.jpg" alt="I Have a Dream">
+
+    <p class="quote-text">"All animals---including humans---are equal,
+       but some animals are more equal than others"</p>
+
+    <p class="quote-author">-- George Orwell</p>
+
+  </div>
+
+  <div class="quote-card">
+    <img src="images/whats-wrong.png" alt="All animals are equal">
+
+    <p class="quote-text">"I have a dream that my four little children will one day live in a
+    nation where they---and what they say---will not be judged by the color of their skin but
+    by the content of their character."</p>
+    <p class="quote-author">-- Martin Luther King Jr.</p>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--
+
+<p style='margin-bottom: -2em;'>
+"I have a dream that my four little children will one day live in a
 nation where they will not be judged by the color of their skin but
-by the content of their character."</p>
+by the content of their character."
+</p>
 
 <p align='center'>--Martin Luther King Jr.</p>
 
@@ -89,6 +145,19 @@ by the content of their character."</p>
 
 
 </div>
+
+
+
+<p align='center'>"All animals are equal, but some animals are more
+equal than others"<br>-- George Orwell</p>
+
+<hr>
+-->
+
+
+
+
+
 
 
 
@@ -104,7 +173,6 @@ remark, or solution.</p>
 <p>It highlights the sharp, amusing, or surprisingly smart aspect of
 something, emphasizing the, often,unexpected "brilliance" or irony
 involved.</p>
-
 
 
 
